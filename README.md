@@ -65,7 +65,7 @@ Then, if homebrew has been correctly installed and ready to work, it installs th
     - Firefox
     - Brave browser
     - Vlc
-    - Cowsay, required for my special/custom extra cool .bashrc file, which I may push on the that very same repo.
+    - Cowsay, required for my special/custom extra cool .bashrc file, which I may push on this repo.
     - Tree
     - Tmux
 
@@ -79,7 +79,7 @@ Then, if homebrew has been correctly installed and ready to work, it installs th
 
     - iTerm2
     - Git
-    - Vcprompt, this displays the name of the branch I'm in, directly in the terminal
+    - Vcprompt, this displays the name of the git branch I'm in, directly in the terminal
     - Vim, when I'm bored
     - Emacs, when I'm extra bored
     - Php
