@@ -7,8 +7,9 @@ This script is meant to automate the local dev environment installation
 Before running the script, make sure you are on a bash shell thanks to the followinf command:
 
 ```bash
-$ which $SHELL
+which $SHELL
 ```
+
 the expected output should be:
 
 "/bin/bash" or "/usr/bin/bash" depending on your environment.
@@ -18,7 +19,7 @@ if it is not the case, then execute the following command:
 first display the list of available shells.
 
 ```bash
-$ sudo cat /etc/shells
+sudo cat /etc/shells
 ```
 
 You should see a list that looks like the one below:
@@ -61,10 +62,6 @@ Then, if homebrew has been correctly installed and ready to work, it installs th
 
   - Formulae:
 
-    - Thunderbird
-    - Firefox
-    - Brave browser
-    - Vlc
     - Cowsay, required for my special/custom extra cool .bashrc file, which I may push on this repo.
     - Tree
     - Tmux
@@ -72,12 +69,15 @@ Then, if homebrew has been correctly installed and ready to work, it installs th
   - Casks:
   
     - Spectacle, move and resize windows with ease and simple keybindings.
+    - Thunderbird
+    - Firefox
+    - Brave-browser
+    - Vlc
 
 - Dev tools:
 
   - Formulae:
 
-    - iTerm2
     - Git
     - Vcprompt, this displays the name of the git branch I'm in, directly in the terminal
     - Vim, when I'm bored
@@ -90,6 +90,7 @@ Then, if homebrew has been correctly installed and ready to work, it installs th
 
   - Casks:
 
+    - iTerm2
     - Insomnia
     - Intellij idea
     - PhpStorm
@@ -104,5 +105,3 @@ Dead simple !
 Do you see the array named "packages" ?
 
 Cool, then add new packages, delete or rename some of them so that the script installs only the packages you need 🫵
-
-
