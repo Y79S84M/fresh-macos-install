@@ -36,7 +36,7 @@ xcode-select --install
 
 # Install all required brew packages for my setup
 # packages name to be installed
-packages=("cowsay" "tree" "tmux" "git" "vcprompt" "vim" "php" "openjdk@17" "mariadb" "sqlite3" "yarn")
+packages=("wget" "cowsay" "tree" "tmux" "git" "vcprompt" "vim" "php" "openjdk@17" "mariadb" "sqlite3" "yarn")
 
 # casks packages name to be installed
 cask_packages=("spectacle" "firefox" "thunderbird" "brave-browser" "vlc" "iterm2" "Insomnia" "Intellij-idea" "phpstorm" "visual-studio-code")
@@ -56,7 +56,7 @@ brew_doctor_status_code=$?
 
 echo "brew doctor command exited with code: $brew_doctor_status_code"
 
-if [[ $brew_doctor_status_code -eq 0 ]]
+if [[ $brew_doctor_status_code -lt 2 ]]
 then
 	i=0
 	echo "Homebrew will now install listed formulae"
