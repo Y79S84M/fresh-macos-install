@@ -68,12 +68,21 @@ echo
 select os in Linux MacOS Exit; do
     case $os in
 	Linux)
+	    echo "================================"
 	    echo "You choose linux"
+	    echo "installing apt packages"
+	    echo
+	    sudo su - $USER -c './linux/install-apt-packages.sh'
 	    break ;;
 	MacOS)
+	    echo "================================"
 	    echo "You choose macos"
+	    echo "installing homebrew packages"
+	    echo
+	    sudo su - $USER -c $pwd/macos/install-homebrew-packages.sh
             break ;;
 	Exit)
+	    echo "================================"
 	    echo "Exiting ..."
 	    break ;;
 	*)
