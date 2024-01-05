@@ -4,7 +4,7 @@ This script is meant to automate the local dev environment installation
 
 ## Pre-requisites
 
-Before running the script, make sure you are on a bash shell thanks to the followinf command:
+Before running the script, make sure you are on a bash shell thanks to the following command:
 
 ```bash
 which $SHELL

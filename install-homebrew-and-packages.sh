@@ -1,14 +1,45 @@
 #!/bin/bash
-# Install all required brew packages for my setup
+# Create Dev directory and its sub-directories
+pwd=$(pwd)
+home_directory="/Users/$USER"
+dev_directory="$home_directory/Dev"
+dev_sub_directories=("/Php" "/Java" "/Bash")
 
+create_dev_subdirectories() {
+    i=0
+    while [[ $i -lt ${#dev_sub_directories[@]} ]]
+    do
+	echo "Creating $dev_directory${dev_sub_directories[i]}"
+	mkdir $dev_directory${dev_sub_directories[i]}
+	((i++))
+    done
+}
+
+create_directories() {
+    mkdir Dev
+    create_dev_subdirectories
+}
+
+if [[ $pwd == $home_directory ]]
+then
+    echo "Creating Dev directories"
+    create_directories
+else
+    echo "Changing to home directory"
+    cd $home_directory
+    echo "Creating Dev directories"
+    create_directories
+fi
+
+# installing xcode
+xcode-select --install
+
+# Install all required brew packages for my setup
 # packages name to be installed
 packages=("cowsay" "tree" "tmux" "git" "vcprompt" "vim" "php" "openjdk@17" "mariadb" "sqlite3" "yarn")
 
 # casks packages name to be installed
 cask_packages=("spectacle" "firefox" "thunderbird" "brave-browser" "vlc" "iterm2" "Insomnia" "Intellij-idea" "phpstorm" "visual-studio-code")
-
-# installing xcode
-xcode-select --install
 
 # installing homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
