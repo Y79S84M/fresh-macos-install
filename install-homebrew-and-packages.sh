@@ -2,7 +2,7 @@
 # Install all required brew packages for my setup
 
 # packages name to be installed
-packages=("cowsay" "tree" "tmux" "git" "vcprompt" "vim" "php" "openjdk@17" "mariadb" "sqlite3" "yarn");
+packages=("cowsay" "tree" "tmux" "git" "vcprompt" "vim" "php" "openjdk@17" "mariadb" "sqlite3" "yarn")
 
 # casks packages name to be installed
 cask_packages=("spectacle" "firefox" "thunderbird" "brave-browser" "vlc" "iterm2" "Insomnia" "Intellij-idea" "phpstorm" "visual-studio-code")
